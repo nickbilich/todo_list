@@ -1,0 +1,216 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('/fonts/glyphicons-halflings-regular.eot');
+    src: url('/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+/* Remove margins and padding from the list */
+body{
+    font-family: Arial;
+}
+
+.main-panel{
+    color: #fff;
+    clear: both;
+    margin: 0px auto;
+    border-radius: 2px 2px 0 0;
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background: linear-gradient(to bottom, #5280bd, #355ea1);
+    border: 1px solid #1a4d8b;
+    border-top: none;
+    height: 50px;
+}
+
+.add-panel{
+    clear: both;
+    margin: 0px auto;
+    border-radius: 2px 2px 0 0;
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #c5c5c5;
+    position: relative;
+    min-height: 20px;
+    background: #d3d3d3;
+    min-height: 50px;
+}
+
+.content-block{
+    border-radius: 0 0 15px 15px;
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    border: 0.5px solid #eef1f0;
+    background: white;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    color: #9d9d9d;
+}
+
+.same-block{
+    max-width: 700px;
+    margin: auto;
+    padding: 5px;
+}
+
+.btn-group{
+	margin-bottom: 20px;
+}
+
+.same-block .btn-group .btn{
+
+}
+
+.content-block .list-element{
+    min-height: 40px;
+}
+
+.content-block .list-element:hover{
+    background: #fcfed4;
+    transition: 1s;
+}
+
+.content-block .list-element td{
+    padding: 10px;
+}
+
+.text-container{
+    width: 70%;
+}
+
+.checkbox-container{
+    width: 10%;
+}
+
+.buttons-container{
+    width: 20%;
+}
+
+.main-panel .btn-lg{
+    padding: 5px 10px;
+}
+
+.right-buttons{
+    float: right;
+}
+
+.add-panel .btn-lg{
+    float: left;
+    padding: 5px;
+}
+
+.login-registration{
+    margin-bottom: 50px;
+    max-width: 400px;
+}
+
+.glyphicon-pencil:hover,
+.glyphicon-sort:hover,
+.glyphicon-trash:hover,
+.glyphicon-arrow-up:hover,
+.glyphicon-arrow-down:hover{
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.popover-content .glyphicon-arrow-up,
+.popover-content .glyphicon-arrow-down{
+    display: block;
+    width: 100%;
+}
+
+.popover-content .glyphicon-arrow-up{
+    margin-bottom: 5px;
+}
+
+.main-button-block{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-button-block button{
+    color: #fff;
+    background: linear-gradient(to bottom, #5280bd, #355ea1);
+}
+
+.main-button-block button:hover{
+    background: linear-gradient(to bottom, #355ea1, #5280bd);
+}
+
+.project-block{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.preloader{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    display: none;
+    background: #fff;
+    opacity: 0.5;
+}
+
+.page-loader-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0 -18px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-top-color: rgba(34, 34, 34, 1);
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-left-color: rgba(34, 34, 34, 1);
+    border-right-color: rgba(0, 0, 0, 0.15);
+    -webkit-animation: page-loader-circle 0.8s linear infinite;
+    animation: page-loader-circle 0.8s linear infinite;
+}
+
+@keyframes page-loader-circle {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes page-loader-circle {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#login_register_container{
+	position: relative;
+}
+
+.error{
+	color: #D8000C;
+	font-size: 12px;
+}
+
+.checked-element{
+	background: #d6e9c6;
+}
